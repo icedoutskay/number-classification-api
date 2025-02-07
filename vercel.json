@@ -1,7 +1,10 @@
 {
-    "version": 2,
- 
-    "routes": [
-      { "src":"/(.*)", "dest": "/api/classify-number" } 
-    ]
+    
+        "version": 2,
+        "functions": {
+          "api/classify-number": {  
+            "runtime": "@vercel/node"
+          }
+        }
+      
   }
