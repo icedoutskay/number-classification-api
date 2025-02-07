@@ -50,7 +50,7 @@ function isPerfect(num) {
 }
 
 
-app.get('/api/classify-number', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     const numberStr = req.query.number;
     if (!numberStr) {
