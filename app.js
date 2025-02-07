@@ -5,7 +5,7 @@ const app = express()
 const port = 4000
 
 
-app.get('/api/classify-number', async (req, res) => {
+app.get('/', async (req, res) => {
     const num = Number(req.query.number)
 
     if (isNaN(num)) {
