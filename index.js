@@ -49,9 +49,6 @@ function isPerfect(num) {
     return sumOfDivisors === num;
 }
 
-app.get('/', (req, res) => {
-  res.send('Welcome to the Number Classification API!');
-});
 
 app.get('/api/classify-number', async (req, res) => {
   try {
